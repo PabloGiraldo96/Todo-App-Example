@@ -1,0 +1,77 @@
+body {
+  margin: 0 50px;
+  background-color: #B3BCD1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  border-radius: 49px;
+  background: #F7F2F8;
+  box-shadow: inset 22px 22px 54px #cfcfd1,
+              inset -22px -22px 54px #ffffff;
+  width: 450px;
+  height: 700px;
+  border: 8px solid #343746;
+  padding: 15px;
+  overflow-y: scroll;
+  font-family: 'Raleway', sans-serif;
+}
+
+.app::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+#addNew {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #DCDDE5;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fa-plus {
+  background-color: #DCDDE5;
+  padding: 3px;
+  border-radius: 6px;
+}
+
+#tasks {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+h4{
+text-align: center;
+margin: 0;
+padding: 20px;
+}
+
+#tasks div {
+  border: 3px solid #DCDDE5;
+  background-color: #DCDDE5;
+  border-radius: 8px;
+  padding: 10px;
+  display: grid;
+  gap: 4px;
+}
+
+#tasks div .options {
+  justify-self: center;
+  display: flex;
+  gap: 20px;
+}
+
+#tasks div .options i {
+  cursor: pointer;
+}
+
+#msg {
+  color: red;
+}
